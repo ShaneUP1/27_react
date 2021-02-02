@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { getCharacters } from '../../../services/xfilesapi';
 
 export default class List extends Component {
 
@@ -7,10 +8,8 @@ export default class List extends Component {
   }
 
   componentDidMount() {
-    // eslint-disable-next-line max-len
-    fetch('https://xfiles-api.herokuapp.com/api/v1/characters?category=Main_characters')
-      .then(res => res.json())
-      .then(json => this.setState({ characters: json.results }));
+    getCharacters()
+      .then(characters => this.setState({ characters }));
   }
 
   render() {
