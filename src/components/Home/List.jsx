@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getCharacters } from '../../../services/xfilesapi';
+import { getCharacters } from '../../services/xfilesapi';
 import CharacterList from '../Characters/CharacterList';
 
 export default class List extends Component {
