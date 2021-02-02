@@ -1,5 +1,5 @@
 import React from 'react';
-import List from './List-Page/List';
+import List from './Home/List';
 
 export default function App() {
   return (
