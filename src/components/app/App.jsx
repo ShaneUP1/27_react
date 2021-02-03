@@ -15,12 +15,11 @@ export default function App() {
           <Route
             path="/"
             exact
-            render={(routerProps) => <List {...routerProps} />}
+            component={List} 
           />
           <Route
-            path="/detail"
-            exact
-            render={(routerProps) => <Detail {...routerProps} />}
+            path="/detail/:name"
+            component={Detail}
           />
         </Switch>
       </Router>

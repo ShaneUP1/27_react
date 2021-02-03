@@ -3,7 +3,6 @@ import { getCharacters } from '../../services/xfilesapi';
 import CharacterList from '../Characters/CharacterList';
 
 export default class List extends Component {
-
   state = {
     characters: []
   }
